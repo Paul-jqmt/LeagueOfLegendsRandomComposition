@@ -15,15 +15,9 @@ export default function App() {
     }
   }
 
-  // Utilisation de useEffect pour déclencher la requête au montage du composant
-  useEffect(() => {
-    getUrl();
-  }, []); // Le tableau vide signifie que l'effet s'exécute seulement au montage
-
   // comportements
-
   const generate = () => {
-    alert("generate");
+    getUrl();
   }
 
   // affichage (render)
@@ -57,7 +51,25 @@ export default function App() {
             </div>
           );
         } else {
-          return <p>Chargement des images...</p>;
+          return (
+            <div className="pt-4 pb-8 pl-24 pr-24">
+              <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
+                <img className="p-2 w-28" src="/top.png" alt="top"></img>
+              </div>
+              <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
+                <img className="p-2 w-28" src="/jungle.png" alt="top"></img>
+              </div>
+              <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
+                <img className="p-2 w-28" src="/mid.png" alt="top"></img>
+              </div>
+              <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
+                <img className="p-2 w-28" src="/bot.png" alt="top"></img>
+              </div>
+              <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
+                <img className="p-2 w-28" src="/support.png" alt="top"></img>
+              </div>
+            </div>
+          );
         }
       })()}
       <div className="pl-24 pr-24 text-center text-slate-300">

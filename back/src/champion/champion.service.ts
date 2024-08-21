@@ -24,22 +24,22 @@ export class ChampionService {
     }
 
     // récupère le nom du champion associé à l'index randomizé
-    const championNames:string [] = championsIndex.map(function (index) {
+    const championNames: string[] = championsIndex.map(function (index) {
       return jsonToObject[index];
     });
 
     // récupère le nom du png associé au nom du perso
     let png: string[] = [];
-    for(let i = 0; i < championsIndex.length; i++){
+    for (let i = 0; i < championsIndex.length; i++) {
       png.push(response.data['data'][championNames[i]]['image']['full'])
-    }     
+    }
 
     // récupère les images grace à l'api Dragon correspondant au nom des persos
-    let championImagesURL: string [] = [];
-    for(let i = 0; i < championNames.length; i++){
+    let championImagesURL: string[] = [];
+    for (let i = 0; i < championNames.length; i++) {
       championImagesURL.push(`https://ddragon.leagueoflegends.com/cdn/${response.data['version']}/img/champion/${png[i]}`);
-    }  
-  
+    }
+
     return championImagesURL;
   }
 }

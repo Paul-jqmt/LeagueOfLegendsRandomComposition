@@ -5,15 +5,18 @@ export default function App() {
 
   // state(état, données)
   const [url, setUrl] = useState(null);
+  const [urlItem, setItemUrl] = useState(null);
 
   async function getUrl() {
     try {
       const response = await axios.get("http://localhost:3000/champions");
       setUrl(response.data);
+      const responseItem = await axios.get("http://localhost:3000/final-items");
+      setItemUrl(responseItem.data);
     } catch (error) {
       console.error("Erreur pendant la récupération des URLS")
     }
-  }
+  }  
 
   // comportements
   const generate = () => {
@@ -31,6 +34,7 @@ export default function App() {
               <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
                 <img className="p-2 w-28" src="/top.png" alt="top"></img>
                 <img className="p-2 w-28" id="top" src={url[0]} alt="Champion" />
+                <img src={urlItem["stuff"]["lane1"][0]}></img>
               </div>
               <div className="bg-slate-500 mb-4 max-w-6xl mx-auto flex">
                 <img className="p-2 w-28" src="/jungle.png" alt="top"></img>

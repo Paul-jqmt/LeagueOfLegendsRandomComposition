@@ -10,18 +10,12 @@
             "Mercury's Treads"
         ],
         "support_items": [
-            "Bloosong",
+            "Bloodsong",
             "Celestial Opposition",
             "Dream Maker",
             "Solstice Sleigh",
-            "Zaz'Zak's Realmspike",
-            "Shurelya's Battlesong",
-            "Mikael's Blessing",
-            "Redemption",
-            "Moonstone Renewer",
-            "Staff of Flowing Water",
-            "Locket of the Iron Solari",
-            "Knight's Vow"
+            "Zaz'Zak's Realmspike"
+           
         ],
         "items": [
             "Abyssal Mask",
@@ -111,7 +105,14 @@
             "Wit's End",
             "Youmuu's Ghostblade",
             "Yun Tal Wildarrows",
-            "Zhonya's Hourglass"
+            "Zhonya's Hourglass",
+            "Shurelya's Battlesong",
+            "Mikael's Blessing",
+            "Redemption",
+            "Moonstone Renewer",
+            "Staff of Flowing Water",
+            "Locket of the Iron Solari",
+            "Knight's Vow"
         ]
     }
 }

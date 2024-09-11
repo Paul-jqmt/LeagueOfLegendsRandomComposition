@@ -1,13 +1,13 @@
 {
     "items": {
         "boots": [
-            "Berserker's Greaves",
-            "Boots of Swiftness",
-            "Ionian Boots of Lucidity",
-            "Sorcerer's Shoes",
-            "Plated Steelcaps",
-            "Symbiotic Soles",
-            "Mercury's Treads"
+            "3006", 
+            "3009", 
+            "3158",
+            "3020",
+            "3047",
+            "3010",
+            "3111"
         ],
         "support_items": [
             "Bloodsong",
